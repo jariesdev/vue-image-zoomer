@@ -1,5 +1,5 @@
 {
-  "name": "@intera/vue-zoom-on-hover",
+  "name": "vue-image-zoomer",
   "version": "1.0.0",
   "description": "vue.js component that shows the full image or a scaled image in the image area on hover",
   "main": "zoomOnHover.js",
