@@ -1,27 +1,39 @@
-# vue-zoom-on-hover
+# vue-image-zoomer
 responsive image with zoomed image on hover.
 
 ![example image](demo/example.png?raw=true)
 
-[demo](https://intera.github.io/vue-zoom-on-hover/demo/main.html) (ctrl+click to open in new tab)
+[demo](https://intera.github.io/vue-image-zoomer/demo/main.html) (ctrl+click to open in new tab)
 
 this [vue.js](https://vuejs.org/) component displays an image with the width of the parent element and on hover shows the full image or a scaled image in the image area
 
 # files
 `zoomOnHover.js` registers the vue component and defines zoomOnHover, a variable for the component configuration object. `zoomOnHover.css` contains the needed styles
 
+# installation
+```
+npm install https://github.com/jariesdev/vue-image-zoomer.git
+```
+
 # usage
 minimal example (with an example div as parent container)
 ```html
+
+import imageZoomer from 'vue-image-zoomer'
+or
+var imageZoomer = require('vue-image-zoomer');
+
+Vue.component('image-zoomer', imageZoomer.default);
+
 <div style="width:400px">
-  <zoom-on-hover img-normal="image.jpg"></zoom-on-hover>
+  <image-zoomer img-normal="image.jpg"></image-zoomer>
 </div>
 ```
 
 all options
 ```html
-<zoom-on-hover img-normal="image.jpg" img-zoom="bigger-image.jpg" :scale="1.5" :disabled="true"
-  @loaded="onload" @resized="onresize"></zoom-on-hover>
+<image-zoomer img-normal="image.jpg" img-zoom="bigger-image.jpg" :scale="1.5" :disabled="true"
+  @loaded="onload" @resized="onresize"></image-zoomer>
 ```
 
 # features
