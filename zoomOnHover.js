@@ -3,6 +3,8 @@
 // features: activate/deactivate method, active/inactive on load, scale parameter, separate zoom image,
 // event when all images loaded, event when images resized (responsive css, etc)
 
+import './zoomOnHover.css';
+
 function pageOffset(el) {
 	// -> {x: number, y: number}
 	// get the left and top offset of a dom block element

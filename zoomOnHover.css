@@ -1,12 +1,13 @@
 .zoom-on-hover {
-  position: relative;
-  overflow: hidden;
+	position: relative;
+	overflow: hidden;
+	cursor: crosshair;
 }
 .zoom-on-hover .normal {
-  width: 100%;
+	width: 100%;
 }
 .zoom-on-hover .zoom {
-  position: absolute;
-  opacity: 0;
-  transform-origin: top left;
+	position: absolute;
+	opacity: 0;
+	transform-origin: top left;
 }
